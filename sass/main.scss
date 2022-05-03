@@ -1,0 +1,120 @@
+@import "../sass/utils/variables";
+@import "../sass/components/header";
+@import "../sass/components/footer";
+@import "../sass/components/index-main";
+@import "../sass/components/modal";
+@import "../sass/components/portfolio-main";
+@import "../sass/components/mobile-menu";
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+h2 {
+  padding-bottom: 50px;
+  margin: 0;
+
+  text-align: center;
+}
+
+
+figure {
+  margin: 0;
+}
+
+
+a{
+  text-decoration: none;
+}
+h2 {
+  font-size: 36px;
+  padding-bottom: 50px;
+  margin: 0;
+
+  text-align: center;
+}
+
+
+.section {
+  padding: 94px 0;
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
+
+@media (max-width:1200px){
+  .section{
+    padding: 60px 0;
+    h2{
+      padding-bottom: 30px;
+      font-size: 28px;
+    }
+  }
+  .footer-info__webStudio{
+    padding: 0;
+    font-size: 28px;
+  }
+ 
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: $main-color;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.main-portfolio {
+  background-color: ($main-portfolio-color);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1200px; 
+  // width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+.link-web {
+  position: relative;
+  text-decoration: none;
+  font-style: normal;
+  color: ($hover-color);
+  padding-bottom: 29px;
+}
