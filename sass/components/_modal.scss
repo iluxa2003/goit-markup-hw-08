@@ -198,3 +198,53 @@
   background: ($hover-color);
   margin-bottom: 30px;
 }
+@media (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+  .modal_sign-form {
+    width: 370px;
+  }
+  #sign-form_comment-area {
+    width: 370px;
+  }
+  .sign-form_check-policy {
+    width: 370px;
+  }
+  .sign-form_check-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+  }
+  .modal_text {
+    width: 370px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .sign-form_envelop {
+    padding: 3px 1.5px;
+    top: 277px;
+    left: 55px;
+  }
+  .sign-form_phone {
+    padding: 2.5px;
+    top: 209px;
+    left: 55px;
+  }
+  .sign-form_person {
+    padding: 3px;
+    top: 141px;
+    left: 55px;
+  }
+  .sign-form_button {
+    line-height: 30px;
+  }
+}

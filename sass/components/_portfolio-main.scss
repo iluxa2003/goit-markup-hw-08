@@ -34,7 +34,7 @@
 
   flex-wrap: wrap;
 }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .galery ul {
     @include flexer(
       $items: center,
@@ -63,7 +63,7 @@
     display: block;
     height: 100%;
 }
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .galery ul {
     @include flexer($items: center, $direction: row, $justify: space-around);
     max-width: auto;

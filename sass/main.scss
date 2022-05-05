@@ -5,6 +5,10 @@
 @import "../sass/components/modal";
 @import "../sass/components/portfolio-main";
 @import "../sass/components/mobile-menu";
+html,
+body {
+  overflow-x: hidden !important;
+}
 
 ul {
   padding: 0;
@@ -34,7 +38,7 @@ p {
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 h2 {
@@ -44,13 +48,11 @@ h2 {
   text-align: center;
 }
 
-
 figure {
   margin: 0;
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 h2 {
@@ -61,7 +63,6 @@ h2 {
   text-align: center;
 }
 
-
 .section {
   padding: 94px 0;
   h2 {
@@ -70,23 +71,6 @@ h2 {
     line-height: 1.16;
     letter-spacing: 0.03em;
   }
-}
-
-
-@media (max-width:1200px){
-  .section{
-    padding: 60px 0;
-    h2{
-      padding-bottom: 30px;
-      font-size: 28px;
-    }
-  }
-  .footer-info__webStudio{
-    padding: 0;
-    font-size: 28px;
-  }
- 
-  
 }
 
 body {
@@ -103,12 +87,12 @@ body {
 }
 
 .main-container {
+  position: relative;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   // width: 1200px;
   margin: 0 auto;
 }
-
 
 
 .link-web {
@@ -117,4 +101,65 @@ body {
   font-style: normal;
   color: ($hover-color);
   padding-bottom: 29px;
+}
+@media (max-width: 1200px) {
+  *ul {
+    flex-direction: column;
+    align-items: row;
+    flex-wrap: wrap;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    padding: 60px 0;
+
+    h2 {
+      padding-bottom: 30px;
+      font-size: 28px;
+    }
+  }
+  .footer-info__webStudio {
+    padding: 0;
+    font-size: 28px;
+  }
+}
+@media (max-width: 479px) {
+  *section {
+    display: flex;
+    flex-direction: column !important;
+  }
+  *ul {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .footer-info__social-list {
+    flex-direction: row !important;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main-container {
+    width: 480px;
+    height: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-container {
+    width: 768px;
+    height: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .main-container {
+    width: 1200px;
+    height: auto;
+  }
 }

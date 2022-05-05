@@ -50,7 +50,7 @@
 
 .footer-info__list-component{
   padding-right: 10px;
-  :last-child {
+  &:last-child {
     padding: 0;
   }
 }
@@ -126,6 +126,55 @@
 
 .icon__button:hover {
   background-color: ($hover-color);
+}
+@media (max-width:479px){
+  .footer-info__container{
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .footer-info__webStudio{
+    padding: 0;
+    font-size: 28px;
+  }
+  .footer-info_address ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-info_left-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 127px;
+    margin-bottom: 60px;
+  }
+  .footer-info__central-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 60px;
+    h5{
+      margin: 0;
+      padding-bottom: 20px;
+    }
+  }
+  .footer-info__text-block{
+    text-align: center;
+    // margin: 0;
+    // margin-bottom: 20px;
+  }
+  .footer-info_right-block{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 156px;
+  }
+  .footer-info__input{
+    width: 90%;
+    align-self: center;
+  }
 }
 @media  (min-width:480px)and(max-width:767px){
   .footer-info__container{
@@ -224,3 +273,4 @@
   }
 
 }
+

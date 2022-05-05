@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -38,7 +38,6 @@
             </li>
           </ul>
         </nav>
-
         <ul class="main-header__address">
           <li class="main-header__address-text">
             <a
@@ -231,9 +230,12 @@
             </li>
             <li>
               <figure>
-                
-                <img srcset="images/repina.jpg 1x, images/repinax2.jpg 2x" 
-                src="images/repina.jpg" alt="Repina_foto" width="270" />
+                <img
+                  srcset="images/repina.jpg 1x, images/repinax2.jpg 2x"
+                  src="images/repina.jpg"
+                  alt="Repina_foto"
+                  width="270"
+                />
                 <figcaption>
                   <p class="team__name">Ольга Репина</p>
                   <p class="team__ocupacy">Frontend developer</p>
@@ -273,8 +275,11 @@
             <li>
               <figure>
                 <img
-                srcset="images/tarasov.jpg 1x, images/tarasovx2.jpg 2x" 
-                src="images/tarasov.jpg" alt="Tarasov_foto" width="270" />
+                  srcset="images/tarasov.jpg 1x, images/tarasovx2.jpg 2x"
+                  src="images/tarasov.jpg"
+                  alt="Tarasov_foto"
+                  width="270"
+                />
                 <figcaption>
                   <p class="team__name">Николай Тарасов</p>
                   <p class="team__ocupacy">Marketing</p>
@@ -313,10 +318,12 @@
             </li>
             <li>
               <figure>
-                
                 <img
-                srcset="images/ermakov.jpg 1x, images/ermakovx2.jpg 2x" 
-                src="images/ermakov.jpg" alt="Ermakov_foto" width="270" />
+                  srcset="images/ermakov.jpg 1x, images/ermakovx2.jpg 2x"
+                  src="images/ermakov.jpg"
+                  alt="Ermakov_foto"
+                  width="270"
+                />
                 <figcaption>
                   <p class="team__name">Михаил Ермаков</p>
                   <p class="team__ocupacy">UI designer</p>
@@ -601,35 +608,37 @@
     </div>
 
     <div data-menu class="aria-expanded mobile-menu">
-      <button data-menu-close class="menu_close-botton" type="button">
-        <svg width="18.67" height="18.67">
-          <use
-            width="18.67"
-            height="18.67"
-            href="images/sprite2.svg#icon-x"
-          ></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu_navigation">
-        <li><a href="index.html" class="active">Студия</a></li>
-        <li><a href="portfolio.html">Портфолио</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="mobile-menu_addres">
-        <li>
-          <a href="tel:+38 096 111 11 11" class="active">+38 096 111 11 11</a>
-        </li>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobile-menu_socials">
-        <li><a href="#" class="active">Instagram</a></li>
-        <li class="line-space"></li>
-        <li><a href="#" class="active">Twitter</a></li>
-        <li class="line-space"></li>
-        <li><a href="#" class="active">Facebook</a></li>
-        <li class="line-space"></li>
-        <li><a href="#" class="active">LinkedIn</a></li>
-      </ul>
+      <div class="main-container">
+        <button data-menu-close class="menu_close-botton" type="button">
+          <svg width="18.67" height="18.67">
+            <use
+              width="18.67"
+              height="18.67"
+              href="images/sprite2.svg#icon-x"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu_navigation">
+          <li><a href="index.html" class="active">Студия</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="mobile-menu_addres">
+          <li>
+            <a href="tel:+38 096 111 11 11" class="active">+38 096 111 11 11</a>
+          </li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu_socials">
+          <li><a href="#" class="active">Instagram</a></li>
+          <li class="line-space"></li>
+          <li><a href="#" class="active">Twitter</a></li>
+          <li class="line-space"></li>
+          <li><a href="#" class="active">Facebook</a></li>
+          <li class="line-space"></li>
+          <li><a href="#" class="active">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
 
     <script src="./js/mobile-menu.js"></script>

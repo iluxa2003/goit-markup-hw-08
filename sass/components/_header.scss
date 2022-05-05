@@ -1,5 +1,6 @@
 .main-header {
   border-bottom: 1px solid ($header-special);
+
 }
 
 .main-header_container {
@@ -193,4 +194,29 @@
     height: 80px;
     padding: 20px 15px 20px 15px;
   }
+}
+@media (max-width:479px) {
+  header {
+    height: 60px;
+  }
+  .main-header__webStudio-link {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .main-header_icon-button {
+    visibility: visible;
+    &:hover .main-header_icon {
+      fill: ($hover-color);
+    }
+  }
+  .header-list {
+    visibility: hidden;
+  }
+  .main-header__address {
+    visibility: hidden;
+  }
+  
 }
