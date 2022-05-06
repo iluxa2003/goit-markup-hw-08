@@ -172,3 +172,13 @@
   transition: transform 250ms ease;
   background-color: rgba(33, 150, 243, 0.9);
 }
+@media (max-width: 1200px){
+  .buttons-portfolio{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+  }
+  .buttons-portfolio__buttons{
+    margin: 0 4px 20px 4px;
+}
+}

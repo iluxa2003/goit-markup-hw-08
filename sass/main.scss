@@ -1,67 +1,16 @@
 @import "../sass/utils/variables";
+@import "../sass/components/modern-normalize";
 @import "../sass/components/header";
 @import "../sass/components/footer";
-@import "../sass/components/index-main";
 @import "../sass/components/modal";
 @import "../sass/components/portfolio-main";
+@import "../sass/components/index-main";
 @import "../sass/components/mobile-menu";
 html,
 body {
   overflow-x: hidden !important;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-img {
-  vertical-align: top;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-li {
-  padding: 0;
-  margin: 0;
-}
-
-figure {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-h2 {
-  padding-bottom: 50px;
-  margin: 0;
-
-  text-align: center;
-}
-
-figure {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-h2 {
-  font-size: 36px;
-  padding-bottom: 50px;
-  margin: 0;
-
-  text-align: center;
-}
 
 .section {
   padding: 94px 0;
@@ -103,7 +52,7 @@ body {
   padding-bottom: 29px;
 }
 @media (max-width: 1200px) {
-  *ul {
+  ul {
     flex-direction: column;
     align-items: row;
     flex-wrap: wrap;
@@ -111,9 +60,10 @@ body {
   .main-container {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
   }
 
-  .section {
+  .section{
     padding: 60px 0;
 
     h2 {
@@ -127,39 +77,30 @@ body {
   }
 }
 @media (max-width: 479px) {
-  *section {
+  .studio-description,.team,.companies-section,.galery {
     display: flex;
     flex-direction: column !important;
+    padding: 30px 0;
+    h2 {
+      
+      font-size: 28px;
+    }
+    & ul {
+      display: flex;
+      flex-direction: column !important;
+      align-items: center;
+    
+    }
+    & li {
+      padding-bottom: 30px;
+    }
   }
-  *ul {
-    display: flex;
-    flex-direction: column !important;
-    align-items: center;
-  }
+  
   .main-container {
     display: flex;
     flex-direction: column !important;
   }
   .footer-info__social-list {
     flex-direction: row !important;
-  }
-}
-@media (min-width: 480px) and (max-width: 767px) {
-  .main-container {
-    width: 480px;
-    height: 100%;
-    margin: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .main-container {
-    width: 768px;
-    height: auto;
-  }
-}
-@media (min-width: 1200px) {
-  .main-container {
-    width: 1200px;
-    height: auto;
   }
 }
